@@ -75,7 +75,7 @@ function App() {
  
       <Routes>
        
-          <Route exact path="/text" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
+          <Route exact path="/" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
             <Route exact path="/about" element={<About about = "About Us"  mode={mode} /> } />
            
            
