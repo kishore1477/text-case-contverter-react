@@ -6,7 +6,8 @@ import Navbar from './Components/Navbar.js';
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
 import {
-  HashRouter,
+  BrowserRouter  as Router,
+  
   Routes,
   Route 
 } from "react-router-dom";
@@ -67,7 +68,7 @@ function App() {
     <>
 
    
-<HashRouter basename='/text-case-contverter-react'>
+<Router  basename='/text-case-contverter-react'>
         <Navbar title="TextUtils" about="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className='container my-5'>
@@ -75,8 +76,8 @@ function App() {
  
       <Routes>
        
-          <Route exact path="/text-case-contverter-react" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
-            <Route exact path="/about" element={<About about = "About Us"  mode={mode} /> } />
+          <Route exact path="/" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
+            <Route   path="/about" element={<About about = "About Us"  mode={mode} /> } />
            
            
         </Routes>
@@ -86,7 +87,7 @@ function App() {
       </div>
 
 
-      </HashRouter>
+      </Router>
 
 
     </>
