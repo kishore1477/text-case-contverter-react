@@ -12,6 +12,7 @@ import {
   Route 
 } from "react-router-dom";
 import Textform from './Components/TextForm';
+import { HashRouter } from 'react-router-dom/dist';
 
 
 function App() {
@@ -68,7 +69,8 @@ function App() {
     <>
 
    
-<Router  >
+{/* <Router  basename='/text-case-contverter-react/'> */}
+<HashRouter> 
         <Navbar title="TextUtils" about="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className='container my-5'>
@@ -87,8 +89,10 @@ function App() {
       </div>
 
 
-      </Router>
-
+      {/* </Router> 
+       */}
+     
+</HashRouter>
 
     </>
   );
