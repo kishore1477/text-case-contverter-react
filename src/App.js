@@ -69,8 +69,8 @@ function App() {
     <>
 
    
-{/* <Router  basename='/text-case-contverter-react/'> */}
-<HashRouter> 
+<Router  basename = "/text-case-contverter-react/">
+{/* <HashRouter>  */}
         <Navbar title="TextUtils" about="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className='container my-5'>
@@ -78,7 +78,7 @@ function App() {
  
       <Routes>
        
-          <Route exact path="/" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
+          <Route  path="/" element={  <Textform heading="Enter the text to Analyzers" showAlert={showAlert} mode={mode} />} />
             <Route   path="/about" element={<About about = "About Us"  mode={mode} /> } />
            
            
@@ -89,10 +89,10 @@ function App() {
       </div>
 
 
-      {/* </Router> 
-       */}
+      </Router> 
+      
      
-</HashRouter>
+{/* </HashRouter> */}
 
     </>
   );
