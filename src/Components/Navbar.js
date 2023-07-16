@@ -24,9 +24,15 @@ export default function Navbar(props) {
           <Link className="nav-link" to = "/about"> {props.about} 
           </Link>
         </li>
-       
+       <li  className="nav-item font-bold  ml-10 ">
+      
+        <a href='https://github.com/kishore1477/text-case-contverter-react' className='nav-link no-underline' target="_blank">
+         <span className='text-primary'>Source code</span> 
+        </a>
+    
+       </li>
       </ul>
-
+     
       <div className='d-flex'>
         <div className='bg-primary rounded mx-2' onClick={()=>{props.toggleMode('primary')}} style={{height: '30px', width: '30px', cursor:'pointer' }}></div>
         <div className='bg-success rounded mx-2' onClick={()=>{props.toggleMode('success')}} style={{height: '30px', width: '30px', cursor:'pointer' }}></div>

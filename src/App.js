@@ -68,7 +68,7 @@ function App() {
     <>
 
    
-<Router  basename='/text-case-contverter-react'>
+<Router  >
         <Navbar title="TextUtils" about="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className='container my-5'>
